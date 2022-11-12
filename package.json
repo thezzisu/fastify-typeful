@@ -1,0 +1,48 @@
+{
+  "name": "fastify-typeful",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Build Typeful REST API with Fastify",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": "git@github.com:thezzisu/fastify-typeful.git",
+  "author": "thezzisu <thezzisu@gmail.com>",
+  "private": false,
+  "exports": {
+    ".": "./dist/index.js",
+    "./server": "./dist/server.js",
+    "./server.js": "./dist/server.js",
+    "./client": "./dist/client.js",
+    "./client.js": "./dist/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@fastify/type-provider-json-schema-to-ts": "^2.1.1",
+    "@types/chai": "^4.3.3",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.0",
+    "@types/qs": "^6.9.7",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.25.0",
+    "fastify": "^4.9.2",
+    "json-schema-to-ts": "^2.6.0",
+    "mocha": "^10.1.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "qs": "^6.11.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha"
+  }
+}
