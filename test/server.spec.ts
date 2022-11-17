@@ -2,8 +2,8 @@
 import chai from 'chai'
 import chaiAsPromised from 'chai-as-promised'
 import { JsonSchemaToTsProvider } from '@fastify/type-provider-json-schema-to-ts'
-import { createRoot } from '../src/server.js'
 import { FastifyInstance } from 'fastify'
+import { createRoot } from '../src/index.js'
 
 chai.use(chaiAsPromised)
 const expect = chai.expect

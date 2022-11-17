@@ -1,20 +1,15 @@
 {
   "name": "fastify-typeful",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "type": "module",
   "description": "Build Typeful REST API with Fastify",
   "license": "MIT",
   "main": "lib/index.js",
   "repository": "git@github.com:thezzisu/fastify-typeful.git",
   "author": "thezzisu <thezzisu@gmail.com>",
-  "private": false,
+  "packageManager": "yarn@3.3.0",
   "exports": {
-    ".": "./dist/index.js",
-    "./server": "./dist/server.js",
-    "./server.js": "./dist/server.js",
-    "./client": "./dist/client.js",
-    "./client.js": "./dist/client.js",
-    "./package.json": "./package.json"
+    ".": "./lib/index.js"
   },
   "files": [
     "lib"
@@ -31,18 +26,22 @@
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.25.0",
-    "fastify": "^4.9.2",
+    "fastify": "^4.10.0",
     "json-schema-to-ts": "^2.6.0",
     "mocha": "^10.1.0",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
+    "typeful-fetch": "^0.1.1",
     "typescript": "^4.8.4"
   },
-  "dependencies": {
-    "qs": "^6.11.0"
+  "peerDependencies": {
+    "fastify": "^4.10.0",
+    "typeful-fetch": "^0.1.1"
   },
   "scripts": {
     "build": "tsc",
-    "test": "mocha"
+    "test": "mocha",
+    "clean": "rimraf .tsbuildinfo lib"
   }
 }

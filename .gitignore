@@ -105,3 +105,6 @@ dist
 
 # TypeScript build output
 /lib/
+
+# Yarn cache directory
+.yarn
